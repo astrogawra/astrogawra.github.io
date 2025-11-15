@@ -1,0 +1,33 @@
+<html>
+  <HEAD>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-2">
+    <TITLE>Asystent Wychowawcy - by Jarosław Stańko</TITLE>
+        <STYLE>
+      h1 {font-family: Monotype Corsiva, Helvetica, sans-serif; font-variant: small-caps ;font-size: 50pt;color:blue}
+      h2 {font-family: Arial, Helvetica, sans-serif; font-variant: small-caps ;font-size: 10pt}
+      p {font-family: Arial, Helvetica, sans-serif; font-size: 9pt; color:red}
+    </STYLE>
+  </HEAD>
+
+<?
+
+foreach($_GET as $key=>$val)$$key=$val;
+foreach($_POST as $key=>$val)$$key=$val;
+foreach($_COOKIE as $key=>$val)$$key=$val;
+foreach($_FILES as $key=>$val)$$key=$val;
+echo "<body link=Blue background=images/back.gif vlink=yellow alink=black>
+  <img src=images/logo.gif alt=Jerry align=left border=4 height=85 width=110><br><br><br><center>
+   <center><br> <h1>Asystent Wychowawcy
+  </h1>
+<FORM METHOD=post ACTION='security.php'>
+ <center><br><br><br>
+<font size=5 color=Navy>Login Name: </FONT><INPUT TYPE=text NAME=login><BR>
+<font size=5 color=Navy>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Hasło:</FONT><INPUT TYPE=password name=haslo><BR><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE=submit value ='ZALOGUJ'>
+</FORM>
+</center>
+<div align=Right><h2>Created by<br> <i>Jarosław Stańko</div>";
+?>
+</body>
+</html>
